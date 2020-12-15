@@ -35,7 +35,7 @@ getPlayerInfo = (data) =>{
                     <div class="card">
                         <header>
                         <a class="profile">
-                            <img src="/player-images/${index.Id}.jpg" alt="Profile Image">
+                            <img src="player-images/${index.Id}.jpg" alt="Profile Image">
                         </a>
                         </header>
 
