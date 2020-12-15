@@ -28,9 +28,7 @@ getPlayerInfo = (data) =>{
         
         sortData.map((index) =>{
             output+=
-            `
-              
-                
+            `          
               <section class="player-card">
                     <div class="card">
                         <header>
@@ -83,8 +81,6 @@ async function playerData(url){
     const response =  await fetch(url);
     playerList = await response.json()
     // console.log(result)
-    // console.log(result.playerList[0].UpComingMatchesList)
-
     getPlayerInfo(playerList);
 }
 
@@ -94,15 +90,3 @@ playerData(url);
 
 
 
-{/* <article>
-                <img src="/player-images/${index.Id}.jpg" alt="Sample photo">
-                <div class="text">
-                  <h3>Name:${index.PFName}</h3>
-                  <p>Sklill:${index.SkillDesc}</p>
-                    <h3>Value:${index.Value}</h3>
-                    ${index.Id}
-                    <h3>${index.UpComingMatchesList[0].CCode}</h3>
-                    <h3>${index.UpComingMatchesList[0].MDate.toString()}</h3>
-                    <h3>${index.UpComingMatchesList[0].VsCCode}</h3>       
-                </div>
-              </article> */}
